@@ -16,5 +16,10 @@ namespace SBI_Mgt_System
         {
             InitializeComponent();
         }
+
+        private void Room1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
