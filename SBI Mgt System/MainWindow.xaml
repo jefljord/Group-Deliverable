@@ -24,27 +24,27 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="10" HorizontalAlignment="Left" Height="223" Grid.RowSpan="2" VerticalAlignment="Top" Width="500">
-            <Button x:Name="_1" Content="1" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Margin="-0.8,-0.8,0,0" Click="_1_Click"/>
+            <Button x:Name="_11" Content="11" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Margin="-0.8,-0.8,0,0" Click="_1_Click" Background="#FF40EB1D"/>
         </Border>
-        <Button Content="2" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="50,1,0,0" Click="Button_Click"/>
-        <Button Content="10" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="49.2,1,-1,0" Grid.Column="8" Click="Button_Click_8"/>
-        <Button Content="11" HorizontalAlignment="Left" Height="114" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0,110,0,-0.4" Grid.RowSpan="2" Click="Button_Click_9"/>
-        <Button Content="8" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="49.4,1,0,0" Grid.Column="6" Click="Button_Click_6"/>
-        <Button Content="9" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="46.8,1,0,0" Grid.Column="7" Click="Button_Click_7"/>
-        <Button Content="12" HorizontalAlignment="Left" Height="111" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.6,110,0,0" Grid.Column="1" Grid.RowSpan="2" Click="Button_Click_10"/>
-        <Button Content="19" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="46.8,0,0,0" Grid.Column="7" Grid.Row="1" Click="Button_Click_17"/>
-        <Button Content="20" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="48.2,0,0,0" Grid.Column="8" Grid.Row="1" Click="Button_Click_18"/>
-        <Button Content="3" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.2,1,0,0" Grid.Column="2" Click="Button_Click_1"/>
-        <Button Content="4" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="50.2,0,0,0" Grid.Column="2" Click="Button_Click_2"/>
-        <Button Content="5" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.4,0,0,0" Grid.Column="4" Click="Button_Click_3"/>
-        <Button Content="6" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Grid.Column="5" Click="Button_Click_4"/>
-        <Button Content="7" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.4,0,0,0" Grid.Column="6" Click="Button_Click_5"/>
-        <Button Content="13" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.2,0,0,0" Grid.Column="2" Grid.Row="1" Click="Button_Click_11"/>
-        <Button Content="14" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="50.2,0,0,0" Grid.Column="2" Grid.Row="1" Click="Button_Click_12"/>
-        <Button Content="15" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.4,0,0,0" Grid.Column="4" Grid.Row="1" Click="Button_Click_13"/>
-        <Button Content="16" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Grid.Column="5" Grid.Row="1" Click="Button_Click_14"/>
-        <Button Content="17" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="48,0,0,0" Grid.Column="5" Grid.Row="1" Click="Button_Click_15"/>
-        <Button Content="18" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="49.4,0,0,0" Grid.Column="6" Grid.Row="1" Click="Button_Click_16"/>
+        <Button x:Name="_12" Content="12" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="50,1,0,0" Click="Button_Click" Background="#FF40EB1D"/>
+        <Button x:Name="_21" Content="21" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="49.2,1,-1,0" Grid.Column="8" Click="Button_Click_8" Background="#FF40EB1D"/>
+        <Button x:Name="_1" Content="1" HorizontalAlignment="Left" Height="114" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0,110,0,-0.4" Grid.RowSpan="2" Click="Button_Click_9" Background="#FF40EB1D"/>
+        <Button x:Name="_19" Content="19" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="49.4,1,0,0" Grid.Column="6" Click="Button_Click_6" Background="#FF40EB1D"/>
+        <Button x:Name="_13" Content="20" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="46.8,1,0,0" Grid.Column="7" Click="Button_Click_7" Background="#FF40EB1D"/>
+        <Button x:Name="_2" Content="2" HorizontalAlignment="Left" Height="111" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.6,110,0,0" Grid.Column="1" Grid.RowSpan="2" Click="Button_Click_10" Background="#FF40EB1D"/>
+        <Button x:Name="_9" Content="9" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="46.8,0,0,0" Grid.Column="7" Grid.Row="1" Click="Button_Click_17" Background="#FF40EB1D"/>
+        <Button x:Name="_10" Content="10" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="48.2,0,0,0" Grid.Column="8" Grid.Row="1" Click="Button_Click_18" Background="#FF40EB1D"/>
+        <Button x:Name="_14" Content="14" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.2,1,0,0" Grid.Column="2" Click="Button_Click_1" Background="#FF40EB1D"/>
+        <Button x:Name="_15" Content="15" Height="109" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="50.2,0,50,0" Grid.Column="2" Click="Button_Click_2" Background="#FF40EB1D"/>
+        <Button x:Name="_16" Content="16" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.4,0,0,0" Grid.Column="4" Click="Button_Click_3" Background="#FF40EB1D"/>
+        <Button x:Name="_17" Content="17" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Grid.Column="5" Click="Button_Click_4" Background="#FF40EB1D"/>
+        <Button x:Name="_18" Content="18" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.4,0,0,0" Grid.Column="6" Click="Button_Click_5" Background="#FF40EB1D"/>
+        <Button x:Name="_3" Content="3" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.2,0,0,0" Grid.Column="2" Grid.Row="1" Click="Button_Click_11" Background="#FF40EB1D"/>
+        <Button x:Name="_4" Content="4" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="50.2,0,0,0" Grid.Column="2" Grid.Row="1" Click="Button_Click_12" Background="#FF40EB1D"/>
+        <Button x:Name="_5" Content="5" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="0.4,0,0,0" Grid.Column="4" Grid.Row="1" Click="Button_Click_13" Background="#FF40EB1D"/>
+        <Button x:Name="_6" Content="6" HorizontalAlignment="Left" Width="51" Grid.ColumnSpan="2" Grid.Column="5" Grid.Row="1" Click="Button_Click_14" Margin="0,0,0,2.6" Background="#FF40EB1D"/>
+        <Button x:Name="_7" Content="7" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Margin="48,0,0,0" Grid.Column="5" Grid.Row="1" Click="Button_Click_15" Background="#FF40EB1D"/>
+        <Button x:Name="_8" Content="8" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="3" Margin="49.4,0,0,0" Grid.Column="6" Grid.Row="1" Click="Button_Click_16" Background="#FF40EB1D"/>
 
 
     </Grid>
