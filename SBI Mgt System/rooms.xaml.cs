@@ -23,15 +23,8 @@ namespace SBI_Mgt_System
             InitializeComponent();           
         }
 
-       
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            
-        }
-
-
-        private void Cancel(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
