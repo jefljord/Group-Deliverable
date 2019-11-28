@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace SBI_Mgt_System
 {
     /// <summary>
@@ -20,13 +22,14 @@ namespace SBI_Mgt_System
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
         }
 
         public void _1_Click(object sender, RoutedEventArgs e)
-        {
+        {            
             Room1 openRoom = new Room1();
             openRoom.Show();
             rooms x = new rooms();
@@ -75,10 +78,15 @@ namespace SBI_Mgt_System
 
         public void Button_Click_5(object sender, RoutedEventArgs e)
         {
+            string rm = "_5";
+            rooms.findRoom(_5);
             Room1 openRoom = new Room1();
             openRoom.Show();
             rooms x = new rooms();
+            x.Owner = this;
             x.Show();
+            
+            rooms.Reserved(_5);
             
         }
 
@@ -179,6 +187,22 @@ namespace SBI_Mgt_System
         }
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
+        {
+            Room1 openRoom = new Room1();
+            openRoom.Show();
+            rooms x = new rooms();
+            x.Show();
+        }
+
+        private void Button_Click_21(object sender, RoutedEventArgs e)
+        {
+            Room1 openRoom = new Room1();
+            openRoom.Show();
+            rooms x = new rooms();
+            x.Show();
+        }
+
+        private void Button_Click_19(object sender, RoutedEventArgs e)
         {
             Room1 openRoom = new Room1();
             openRoom.Show();
