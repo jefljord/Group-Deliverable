@@ -19,6 +19,8 @@ namespace SBI_Mgt_System
    
     public partial class rooms : Window
     {
+        //myCalendar.BlackoutDates.Add(cdr);
+
         public static bool res = false;
 
         public static Button z = new Button();
@@ -32,6 +34,7 @@ namespace SBI_Mgt_System
         public static Button Reserved(Button p)
         {                  
             p.Background = new SolidColorBrush(Color.FromArgb(50, 180, 20, 30));
+           
             
             return p;
         }
@@ -40,8 +43,7 @@ namespace SBI_Mgt_System
             InitializeComponent();    
             
         }
-
-
+              
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             z.Background = new SolidColorBrush(Color.FromArgb(30, 0, 0, 1));
@@ -51,6 +53,7 @@ namespace SBI_Mgt_System
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             res = true;
+            this.Close();
             
             
         }
