@@ -48,8 +48,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_1";
             rooms.findRoom(_1);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -61,8 +60,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_2";
             rooms.findRoom(_2);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -74,8 +72,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_3";
             rooms.findRoom(_3);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -87,8 +84,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_4";
             rooms.findRoom(_4);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -100,8 +96,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_5";
             rooms.findRoom(_5);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -114,8 +109,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_6";
             rooms.findRoom(_6);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -127,8 +121,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_7";
             rooms.findRoom(_7);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -140,8 +133,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_8";
             rooms.findRoom(_8);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -153,8 +145,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_9";
             rooms.findRoom(_9);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -166,8 +157,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_10";
             rooms.findRoom(_10);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -179,8 +169,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_11";
             rooms.findRoom(_11);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -192,8 +181,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_12";
             rooms.findRoom(_12);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -205,8 +193,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_13";
             rooms.findRoom(_13);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+           
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -218,8 +205,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_14";
             rooms.findRoom(_14);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -231,8 +217,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_15";
             rooms.findRoom(_15);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -244,8 +229,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_16";
             rooms.findRoom(_16);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -257,8 +241,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_17";
             rooms.findRoom(_17);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -270,8 +253,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_18";
             rooms.findRoom(_18);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -283,8 +265,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_21";
             rooms.findRoom(_21);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+           
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -296,8 +277,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_19";
             rooms.findRoom(_19);
-            Room1 openRoom = new Room1();
-            openRoom.Show();
+            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
