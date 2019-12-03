@@ -66,21 +66,9 @@ namespace SBI_Mgt_System
             rooms x = new rooms();
             x.Show();
         }
-
-        public void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            
-           // string rm = "_1";
-            //rooms.findRoom(_1);
-            int roomNumber = 0;
-            currentroom = rooming[roomNumber];
-            currentroom.roomNum = roomNumber;
-
-            //rooms x = new rooms();
-           // x.Owner = this;
-           //x.Show();
-            Display.Text = "Name: " + currentroom.name + "\n" + "People: " + Convert.ToString(currentroom.people) + "\n" + "Pet: ";
-            if (currentroom.pet)
+        public void PrintHelper(room current) {
+            Display.Text = "Name: " + current.name + "\n" + "People: " + Convert.ToString(current.people) + "\n" + "Pet: ";
+            if (current.pet)
             {
                 Display.Text += "Yes";
             }
@@ -88,6 +76,40 @@ namespace SBI_Mgt_System
             {
                 Display.Text += "No";
             }
+            Display.Text += "\nPrice: ";
+
+        }
+
+        public double PriceHelper(room current) {
+            double price = 0;
+            if(current.roomNum < 11) {
+                price = 60;
+            }
+            else {
+                price = 50;
+            }
+
+            if (current.people > 2)
+            {
+                price += (10 * (current.people - 2));
+            }
+            if (current.pet)
+            {
+                price += 10;
+            }
+
+            return price + (price*.1475);
+        }
+        public void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+          
+            int roomNumber = 0;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+            
+            
 
             rooms.Reserved(_1);
         }
@@ -97,12 +119,8 @@ namespace SBI_Mgt_System
             int roomNumber = 1;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_2";
-            rooms.findRoom(_2);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            PrintHelper(currentroom);
+
 
             rooms.Reserved(_2);
         }
@@ -112,13 +130,7 @@ namespace SBI_Mgt_System
             int roomNumber = 2;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_3";
-            rooms.findRoom(_3);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_3);
         }
 
@@ -127,12 +139,7 @@ namespace SBI_Mgt_System
             int roomNumber = 3;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_4";
-            rooms.findRoom(_4);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            PrintHelper(currentroom);
 
             rooms.Reserved(_4);
         }
@@ -142,13 +149,7 @@ namespace SBI_Mgt_System
             int roomNumber = 4;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_5";
-            rooms.findRoom(_5);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_5);
 
         }
@@ -158,12 +159,7 @@ namespace SBI_Mgt_System
             int roomNumber = 5;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_6";
-            rooms.findRoom(_6);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            PrintHelper(currentroom);
 
             rooms.Reserved(_6);
         }
@@ -173,12 +169,7 @@ namespace SBI_Mgt_System
             int roomNumber = 6;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_7";
-            rooms.findRoom(_7);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            PrintHelper(currentroom);
 
             rooms.Reserved(_7);
         }
@@ -188,13 +179,7 @@ namespace SBI_Mgt_System
             int roomNumber = 7;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_8";
-            rooms.findRoom(_8);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_8);
         }
 
@@ -203,12 +188,7 @@ namespace SBI_Mgt_System
             int roomNumber = 8;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_9";
-            rooms.findRoom(_9);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            PrintHelper(currentroom);
 
             rooms.Reserved(_9);
         }
@@ -218,13 +198,7 @@ namespace SBI_Mgt_System
             int roomNumber = 9;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_10";
-            rooms.findRoom(_10);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_10);
         }
 
@@ -233,13 +207,7 @@ namespace SBI_Mgt_System
             int roomNumber = 10;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_11";
-            rooms.findRoom(_11);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_11);
         }
 
@@ -248,13 +216,7 @@ namespace SBI_Mgt_System
             int roomNumber = 11;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_12";
-            rooms.findRoom(_12);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_12);
         }
 
@@ -263,13 +225,7 @@ namespace SBI_Mgt_System
             int roomNumber = 18;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_13";
-            rooms.findRoom(_20);
-           
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_20);
         }
 
@@ -278,13 +234,7 @@ namespace SBI_Mgt_System
             int roomNumber = 12;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_14";
-            rooms.findRoom(_14);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_14);
         }
 
@@ -293,12 +243,7 @@ namespace SBI_Mgt_System
             int roomNumber = 13;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_15";
-            rooms.findRoom(_15);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            PrintHelper(currentroom);
 
             rooms.Reserved(_15);
         }
@@ -308,12 +253,7 @@ namespace SBI_Mgt_System
             int roomNumber = 14;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_16";
-            rooms.findRoom(_16);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            PrintHelper(currentroom);
 
             rooms.Reserved(_16);
         }
@@ -323,13 +263,7 @@ namespace SBI_Mgt_System
             int roomNumber = 15;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_17";
-            rooms.findRoom(_17);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_17);
         }
 
@@ -338,13 +272,7 @@ namespace SBI_Mgt_System
             int roomNumber = 16;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_18";
-            rooms.findRoom(_18);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_18);
         }
 
@@ -353,13 +281,7 @@ namespace SBI_Mgt_System
             int roomNumber = 19;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_21";
-            rooms.findRoom(_21);
-           
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_21);
         }
 
@@ -368,13 +290,7 @@ namespace SBI_Mgt_System
             int roomNumber = 17;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            string rm = "_19";
-            rooms.findRoom(_19);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
+            PrintHelper(currentroom);
             rooms.Reserved(_19);
         }
 
@@ -402,14 +318,17 @@ namespace SBI_Mgt_System
             {
                 currentroom.people = 5;
             }
+
             if(PetBox.IsChecked == true)
             {
                 currentroom.pet = true;
             }
-
+            PrintHelper(currentroom);
+            Display.Text += PriceHelper(currentroom).ToString("0." + new string('0', 2));
             rooming[currentroom.roomNum] = currentroom;
 
         }
+
 
         /*private void _1Pep_Checked(object sender, RoutedEventArgs e)
         {
