@@ -38,12 +38,14 @@ namespace SBI_Mgt_System
         }
 
         public void fillArray(room[] r) {
-            for (int i = 0; i < 20; i++)
+            room x = new room();
+            for (int i = 0; i < 19; i++)
             {
-                r[i].roomNum = 0;
-                r[i].name = "";
-                r[i].people = 0;
-                r[i].pet = false;
+                x.roomNum = 0;
+                x.name = "";
+                x.people = 0;
+                x.pet = false;
+                r[i] = x;
             }
         }
 
