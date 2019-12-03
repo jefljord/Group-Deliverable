@@ -22,12 +22,22 @@ namespace SBI_Mgt_System
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        public class room
+        {
+            public int roomNum;
+            public string name;
+            public int people;
+            public bool pet;
+        }
+        room[] rooming = new room[20];
+
+        room currentroom;
         public void _1_Click(object sender, RoutedEventArgs e)
         {            
             Room1 openRoom = new Room1();
@@ -48,6 +58,7 @@ namespace SBI_Mgt_System
         {
             string rm = "_1";
             rooms.findRoom(_1);
+            currentroom = rooming[0];
             
             rooms x = new rooms();
             x.Owner = this;

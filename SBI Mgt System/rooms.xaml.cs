@@ -24,6 +24,9 @@ namespace SBI_Mgt_System
         public static bool res = false;
 
         public static Button z = new Button();
+        public string name;
+        public int people;
+        public bool pet;
         public static Button findRoom(Button pp)
         {
             z = pp;
@@ -57,5 +60,7 @@ namespace SBI_Mgt_System
             
             
         }
+
+       
     }
 }
