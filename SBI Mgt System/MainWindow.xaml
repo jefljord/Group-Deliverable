@@ -66,6 +66,7 @@
         <RadioButton x:Name="_5Pep" Content="5" HorizontalAlignment="Left" Height="14" Margin="-63,82,0,0" VerticalAlignment="Top" Width="30" />
         <RadioButton x:Name="_2Pep" Content="2" HorizontalAlignment="Left" Height="15" Margin="-168,81,0,0" VerticalAlignment="Top" Width="31" />
         <TextBox x:Name ="Display" HorizontalAlignment="Left" Height="104" Margin="-288,114,0,-106" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="787" Grid.ColumnSpan="10" IsReadOnly="True"/>
+        <Button x:Name="Checkout_Cancel" Content="Checkout" HorizontalAlignment="Left" Height="30" Margin="-260,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" Click="Checkout_Click"/>
 
 
     </Grid>

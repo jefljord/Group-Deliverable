@@ -22,14 +22,9 @@ namespace SBI_Mgt_System
     /// </summary>
     public partial class MainWindow : Window
     {
-        public class room
-        {
-            public int roomNum;
-            public string name;
-            public int people;
-            public bool pet = false;
-        }
-        room[] rooming = new room[19];
+        
+        room[] rooming = new room[20];
+        public Button tempButton = new Button();
 
         public MainWindow()
         {
@@ -39,18 +34,15 @@ namespace SBI_Mgt_System
 
         public void fillArray(room[] r) {
             room x = new room();
-            for (int i = 0; i < 19; i++)
+            for (int i = 0; i < 20; i++)
             {
-                x.roomNum = 0;
-                x.name = "";
-                x.people = 0;
-                x.pet = false;
+                x.empty();
                 r[i] = x;
             }
         }
 
         
-    room currentroom; 
+        room currentroom = new room(); 
         public void _1_Click(object sender, RoutedEventArgs e)
         {            
             Room1 openRoom = new Room1();
@@ -76,10 +68,10 @@ namespace SBI_Mgt_System
             {
                 Display.Text += "No";
             }
-            Display.Text += "\nPrice: ";
+            Display.Text += "\nPrice: " + PriceHelper(currentroom).ToString("0." + new string('0', 2));
 
         }
-
+        
         public double PriceHelper(room current) {
             double price = 0;
             if(current.roomNum < 11) {
@@ -102,196 +94,239 @@ namespace SBI_Mgt_System
         }
         public void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
-          
+            tempButton = _1;
+            currentroom.empty();
+
             int roomNumber = 0;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            PrintHelper(currentroom);
+            PrintHelper(rooming[roomNumber]);
             
             
 
-            rooms.Reserved(_1);
+  
         }
 
         public void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            tempButton = _2;
+            currentroom.empty();
+
             int roomNumber = 1;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
-            PrintHelper(currentroom);
+            
+            PrintHelper(rooming[roomNumber]);
 
 
-            rooms.Reserved(_2);
+ 
         }
 
         public void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            tempButton = _3;
+            currentroom.empty();
             int roomNumber = 2;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_3);
+      
         }
 
         public void Button_Click_4(object sender, RoutedEventArgs e)
         {
+            currentroom.empty();
+
+            tempButton = _4;
             int roomNumber = 3;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
 
-            rooms.Reserved(_4);
+
         }
 
         public void Button_Click_5(object sender, RoutedEventArgs e)
         {
+            tempButton = _5;
+            currentroom.empty();
             int roomNumber = 4;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_5);
+       
 
         }
 
         public void Button_Click_6(object sender, RoutedEventArgs e)
         {
+            tempButton = _6;
+            currentroom.empty();
             int roomNumber = 5;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
 
-            rooms.Reserved(_6);
+
         }
 
         public void Button_Click_7(object sender, RoutedEventArgs e)
         {
+            tempButton = _7;
+            currentroom.empty();
             int roomNumber = 6;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
 
-            rooms.Reserved(_7);
+         
         }
 
         public void Button_Click_8(object sender, RoutedEventArgs e)
         {
+            tempButton = _8;
+            currentroom.empty();
             int roomNumber = 7;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_8);
+
         }
 
         public void Button_Click_9(object sender, RoutedEventArgs e)
         {
+            tempButton = _9;
+            currentroom.empty();
             int roomNumber = 8;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
 
-            rooms.Reserved(_9);
+      
         }
 
         public void Button_Click_10(object sender, RoutedEventArgs e)
         {
+            tempButton = _10;
+            currentroom.empty();
             int roomNumber = 9;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_10);
+       
         }
 
         public void Button_Click_11(object sender, RoutedEventArgs e)
         {
+            tempButton = _11;
+            currentroom.empty();
             int roomNumber = 10;
-            currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
+            currentroom = rooming[roomNumber];
+            
             PrintHelper(currentroom);
-            rooms.Reserved(_11);
+  
         }
 
         public void Button_Click_12(object sender, RoutedEventArgs e)
         {
+            tempButton = _12;
+            currentroom.empty();
             int roomNumber = 11;
-            currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
+            currentroom = rooming[roomNumber];
+            
             PrintHelper(currentroom);
-            rooms.Reserved(_12);
+        
         }
 
         public void Button_Click_20(object sender, RoutedEventArgs e)
         {
+            tempButton = _20;
+            currentroom.empty();
             int roomNumber = 18;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_20);
+  
         }
 
         public void Button_Click_14(object sender, RoutedEventArgs e)
         {
+            tempButton = _14;
+            currentroom.empty();
             int roomNumber = 12;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_14);
+ 
         }
 
         public void Button_Click_15(object sender, RoutedEventArgs e)
         {
+            tempButton = _15;
+            currentroom.empty();
             int roomNumber = 13;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
 
-            rooms.Reserved(_15);
+      
         }
 
         public void Button_Click_16(object sender, RoutedEventArgs e)
         {
+            tempButton = _16;
+            currentroom.empty();
             int roomNumber = 14;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
 
-            rooms.Reserved(_16);
+        
         }
 
         public void Button_Click_17(object sender, RoutedEventArgs e)
         {
+            tempButton = _17;
+            currentroom.empty();
             int roomNumber = 15;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_17);
+      
         }
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
         {
+            tempButton = _18;
+            currentroom.empty();
             int roomNumber = 16;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_18);
+         
         }
 
         private void Button_Click_21(object sender, RoutedEventArgs e)
         {
+            currentroom.empty();
+            tempButton = _21;
             int roomNumber = 19;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_21);
+            
         }
 
         private void Button_Click_19(object sender, RoutedEventArgs e)
         {
+            currentroom.empty();
             int roomNumber = 17;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
             PrintHelper(currentroom);
-            rooms.Reserved(_19);
+            
         }
 
         private void Confirmation_Click(object sender, RoutedEventArgs e)
@@ -323,36 +358,24 @@ namespace SBI_Mgt_System
             {
                 currentroom.pet = true;
             }
+            room a = new room();
             PrintHelper(currentroom);
-            Display.Text += PriceHelper(currentroom).ToString("0." + new string('0', 2));
-            rooming[currentroom.roomNum] = currentroom;
+            a = currentroom.MakeCopy();
+            rooming[currentroom.roomNum] = a;
+            tempButton.Background = new SolidColorBrush(Colors.Red);
+        }
+
+        
+        private void Checkout_Click(object sender, RoutedEventArgs e)
+        {
+            room j = new room();
+            currentroom.empty();
+            rooming[currentroom.roomNum] = j;
+            tempButton.Background = new SolidColorBrush(Color.FromArgb(30, 0, 0, 1));
 
         }
 
 
-        /*private void _1Pep_Checked(object sender, RoutedEventArgs e)
-        {
-            _1Pep.IsChecked = true;
-        }
-
-        private void _3Pep_Checked(object sender, RoutedEventArgs e)
-        {
-            _2Pep.IsChecked = true;
-        }
-
-        private void _2Pep_Checked(object sender, RoutedEventArgs e)
-        {
-            _3Pep.IsChecked = true;
-        }
-
-        private void _4Pep_Checked(object sender, RoutedEventArgs e)
-        {
-            _4Pep.IsChecked = true;
-        }
-
-        private void _5Pep_Checked(object sender, RoutedEventArgs e)
-        {
-            _5Pep.IsChecked = true;
-        }*/
+        
     }
 }

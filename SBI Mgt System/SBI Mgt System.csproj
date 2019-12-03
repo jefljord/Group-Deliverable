@@ -57,6 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="room.cs" />
     <Compile Include="Room1.cs">
       <SubType>Form</SubType>
     </Compile>
