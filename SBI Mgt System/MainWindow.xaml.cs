@@ -22,22 +22,33 @@ namespace SBI_Mgt_System
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
         public class room
         {
             public int roomNum;
             public string name;
             public int people;
-            public bool pet;
+            public bool pet = false;
         }
-        room[] rooming = new room[20];
+        room[] rooming = new room[19];
 
-        room currentroom;
+        public MainWindow()
+        {
+            InitializeComponent();
+            fillArray(rooming);
+        }
+
+        public void fillArray(room[] r) {
+            for (int i = 0; i < 20; i++)
+            {
+                r[i].roomNum = 0;
+                r[i].name = "";
+                r[i].people = 0;
+                r[i].pet = false;
+            }
+        }
+
+        
+    room currentroom; 
         public void _1_Click(object sender, RoutedEventArgs e)
         {            
             Room1 openRoom = new Room1();
@@ -56,10 +67,13 @@ namespace SBI_Mgt_System
 
         public void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            
             string rm = "_1";
             rooms.findRoom(_1);
-            currentroom = rooming[0];
-            
+            int roomNumber = 0;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
@@ -69,6 +83,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 1;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_2";
             rooms.findRoom(_2);
             
@@ -81,6 +98,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 2;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_3";
             rooms.findRoom(_3);
             
@@ -93,6 +113,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_4(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 3;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_4";
             rooms.findRoom(_4);
             
@@ -105,6 +128,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_5(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 4;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_5";
             rooms.findRoom(_5);
             
@@ -118,6 +144,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_6(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 5;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_6";
             rooms.findRoom(_6);
             
@@ -130,6 +159,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_7(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 6;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_7";
             rooms.findRoom(_7);
             
@@ -142,6 +174,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_8(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 7;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_8";
             rooms.findRoom(_8);
             
@@ -154,6 +189,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_9(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 8;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_9";
             rooms.findRoom(_9);
             
@@ -166,6 +204,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_10(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 9;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_10";
             rooms.findRoom(_10);
             
@@ -178,6 +219,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_11(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 10;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_11";
             rooms.findRoom(_11);
             
@@ -190,6 +234,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_12(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 11;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_12";
             rooms.findRoom(_12);
             
@@ -200,20 +247,26 @@ namespace SBI_Mgt_System
             rooms.Reserved(_12);
         }
 
-        public void Button_Click_13(object sender, RoutedEventArgs e)
+        public void Button_Click_20(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 18;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_13";
-            rooms.findRoom(_13);
+            rooms.findRoom(_20);
            
             rooms x = new rooms();
             x.Owner = this;
             x.Show();
 
-            rooms.Reserved(_13);
+            rooms.Reserved(_20);
         }
 
         public void Button_Click_14(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 12;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_14";
             rooms.findRoom(_14);
             
@@ -226,6 +279,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_15(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 13;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_15";
             rooms.findRoom(_15);
             
@@ -238,6 +294,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_16(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 14;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_16";
             rooms.findRoom(_16);
             
@@ -250,6 +309,9 @@ namespace SBI_Mgt_System
 
         public void Button_Click_17(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 15;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_17";
             rooms.findRoom(_17);
             
@@ -262,6 +324,9 @@ namespace SBI_Mgt_System
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 16;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_18";
             rooms.findRoom(_18);
             
@@ -274,6 +339,9 @@ namespace SBI_Mgt_System
 
         private void Button_Click_21(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 19;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_21";
             rooms.findRoom(_21);
            
@@ -286,6 +354,9 @@ namespace SBI_Mgt_System
 
         private void Button_Click_19(object sender, RoutedEventArgs e)
         {
+            int roomNumber = 17;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
             string rm = "_19";
             rooms.findRoom(_19);
             
@@ -294,6 +365,62 @@ namespace SBI_Mgt_System
             x.Show();
 
             rooms.Reserved(_19);
+        }
+
+        private void Confirmation_Click(object sender, RoutedEventArgs e)
+        {
+
+            currentroom.name = NameIN.Text;
+            if (_1Pep.IsChecked == true)
+            {
+                currentroom.people = 1;
+            }
+            else if (_2Pep.IsChecked == true)
+            {
+                currentroom.people = 2;
+            }
+            else if (_3Pep.IsChecked == true)
+            {
+                currentroom.people = 3;
+            }
+            else if (_4Pep.IsChecked == true)
+            {
+                currentroom.people = 4;
+            }
+            else if (_5Pep.IsChecked == true)
+            {
+                currentroom.people = 5;
+            }
+            if(PetBox.IsChecked == true)
+            {
+                currentroom.pet = true;
+            }
+            rooming[currentroom.roomNum] = currentroom;
+        }
+
+        private void _1Pep_Checked(object sender, RoutedEventArgs e)
+        {
+            _1Pep.IsChecked = true;
+        }
+
+        private void _3Pep_Checked(object sender, RoutedEventArgs e)
+        {
+            _2Pep.IsChecked = true;
+        }
+
+        private void _2Pep_Checked(object sender, RoutedEventArgs e)
+        {
+            _3Pep.IsChecked = true;
+        }
+
+        private void _4Pep_Checked(object sender, RoutedEventArgs e)
+        {
+            _4Pep.IsChecked = true;
+        }
+
+        private void _5Pep_Checked(object sender, RoutedEventArgs e)
+        {
+            _5Pep.IsChecked = true;
         }
     }
 }

@@ -21,7 +21,6 @@
         <Button Content="Cancel/Checkout" HorizontalAlignment="Left" Height="32" Margin="236,309,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="37" Margin="340,304,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click_1"/>
         <DatePicker HorizontalAlignment="Left" Margin="340,110,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="GuestCount" HorizontalAlignment="Left" Margin="303,148,0,0" VerticalAlignment="Top" Width="139" Height="24" SelectionChanged="ComboBox_SelectionChanged"/>
 
     </Grid>
 </Window>
