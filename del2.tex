@@ -91,19 +91,19 @@ Designing a universal program that could be adjusted to fit any business model m
 The scope of this program will be extensive. It will handle guest checkins and checkouts, it will feature an intuitive and powerful interface, it will be adjustable to any hotel, it will ensure no overbooking issues arise, will keep track of customer rewards points, and lastly, feature a cross-shift note system. 
 
 \subsection{Requirements}
-As part of fleshing out the scope of your requirements, you'll also need to keep in mind both your functional and non-functional requirements.  These should be listed, and explained in detail as necessary.  Use this area to explain how you gathered these requirements.
+The main requirement is a visual of the hotel's rooms and what it available, as well as what's already reserved. Another requirement is the functionality to take in a customer's information and turn a vacant room into a reserved room. 
 
 \subsubsection{Functional}
 \begin{itemize}
-\item User needs to have a private shopping cart -- this cannot be shared between users, and needs to maintain state across subsequent visits to the site
-\item Users need to have website accounts -- this will help track recent purchases, keep shopping cart records, etc.
-\item You'll need more than 2 of these...
+\item Visual map of the rooms.
+\item Color coding of availability.
+\item User information field.
+\item Notes
 \end{itemize}
 
 \subsubsection{Non-Functional}
 \begin{itemize}
-\item Security -- user credentials must be encrypted on disk, users should be able to reset their passwords if forgotten
-\item you'll typically have fewer non-functional than functional requirements
+\item Security -- The note system should be hidden until clicked.
 \end{itemize}
 
 \subsection{Use Cases}
@@ -133,37 +133,25 @@ As part of fleshing out the scope of your requirements, you'll also need to keep
 \item[Description:] Interact with a calender in order to properly plan out and schedule rooms to be booked and blocked to prevent overbooking.
 \end{itemize}
 
-\begin{itemize}
-\item[Use Case Number:] 2
-\item[Use Case Name:] Checkout
-\item[Description:] A shopper on our site has finished shopping.  They will click on a ``Checkout" button.  This will kick off a process to calculate cart total, any taxes, shipping rates, and collect payment from the shopper.
-
-\end{itemize}
-
-You will then need to continue to flesh out all use cases you have identified for your project.
-
-
-
 \subsection{Interface Mockups}
 \begin{figure}[ht!]
-\includegraphics[height=250px, width=350px]{MainWindowGUI.png}
+\includegraphics[height=250px, width=350px]{GUI.png}
 \caption{Main window of the program}
-\label{Interface}
-\end{figure}
-
-\subsection{Interface Mockups}
-\begin{figure}[ht!]
-\includegraphics[height=250px, width=350px]{ResrvationGUI.png}
-\caption{Reservation system}
 \label{Interface}
 \end{figure}
 
 
 \section{Project Timeline}
-Go back to your notes and look up a typical project development life cycle for the Waterfall approach.  How will you follow this life cycle over the remainder of this semester?  This will usually involve a chart showing your proposed timeline, with specific milestones plotted out.  Make sure you have deliverable dates from the course schedule listed, with a plan to meet them (NOTE: these are generally optimistic deadlines).
+A large portion of our time spent on this project was on design. To be honest, too much time was spent on the design. It wasn't until, two months in, that we started the actual coding of the project, that the design fell into place all on its own. 
+
+Within two days, we had moved past the design and delved into the requirements. First came the buttons themselves. Each button needed to act separately from the others, so it took over a month to manage everything that needed to happen upon button clicks. Some of these issues were color changes, form population, and a note system.
+
+This last month has been committed to polishing and trying to learn a database. We eventually gave up on the database and will store all information as notes.
 
 \section{Project Structure}
-At first, this will be a little empty (it will need to be filled in by the time you turn in your final report).  This is your chance to discuss all of your design decisions (consider this the README's big brother).
+By the project's culmination, it turned into a day to day system to manage availability of rooms for the hotel. It has a working GUI, and upon filling in the information about reservation, it will mark the room unavailable with a color change. There is another button that will change it back to available. 
+
+All information is stored in a display box for notes, in lieu of a database. We realized there is no point since they have no rewards system in place at the hotel yet. 
 
 \subsection{UML Outline}
 
@@ -172,16 +160,14 @@ At first, this will be a little empty (it will need to be filled in by the time 
 
 
 \subsection{Design Patterns Used}
-Make sure to actually use at least 2 design patterns from this class.  This is not normally part of such documentation, but largely just specific to this class -- I want to see you use the patterns!
+The decorator design pattern was used on buttons. Upon another button's clicking, a separate button will change color. 
 
 
 \section{Results}
 This section will start out a little vague, but it should grow as your project evolves.  With each deliverable you hand in, give me a final summary of where your project stands.  By the end, this should be a reflective section discussing how many of your original goals you managed to attain/how many desired use cases you implemented/how many extra features you added.
 
 \subsection{Future Work}
-Where are you going next with your project?
-For early deliverable, what are your next steps?  (HINT: you will typically want to look back at your timeline and evaluate: did you meet your expected goals?  Are you ahead of schedule?  Did you decide to shift gears and implement a new feature?)
-By the end, what do you plan on doing with this project?  Will you try to sell it?  Set it on fire?  Link to it on your resume and forget it exists?
+Future work will include tweaking as it's used in the field. There will need to be a save system in case of recovery upon crash. If the hotel ever adds a reward system, there will need to be a database implemented. 
 
 \begin{thebibliography}{1}
 
