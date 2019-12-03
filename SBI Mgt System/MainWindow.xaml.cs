@@ -70,15 +70,24 @@ namespace SBI_Mgt_System
         public void Button_Click_1(object sender, RoutedEventArgs e)
         {
             
-            string rm = "_1";
-            rooms.findRoom(_1);
+           // string rm = "_1";
+            //rooms.findRoom(_1);
             int roomNumber = 0;
             currentroom = rooming[roomNumber];
             currentroom.roomNum = roomNumber;
 
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            //rooms x = new rooms();
+           // x.Owner = this;
+           //x.Show();
+            Display.Text = "Name: " + currentroom.name + "\n" + "People: " + Convert.ToString(currentroom.people) + "\n" + "Pet: ";
+            if (currentroom.pet)
+            {
+                Display.Text += "Yes";
+            }
+            else
+            {
+                Display.Text += "No";
+            }
 
             rooms.Reserved(_1);
         }
@@ -397,10 +406,12 @@ namespace SBI_Mgt_System
             {
                 currentroom.pet = true;
             }
+
             rooming[currentroom.roomNum] = currentroom;
+
         }
 
-        private void _1Pep_Checked(object sender, RoutedEventArgs e)
+        /*private void _1Pep_Checked(object sender, RoutedEventArgs e)
         {
             _1Pep.IsChecked = true;
         }
@@ -423,6 +434,6 @@ namespace SBI_Mgt_System
         private void _5Pep_Checked(object sender, RoutedEventArgs e)
         {
             _5Pep.IsChecked = true;
-        }
+        }*/
     }
 }
