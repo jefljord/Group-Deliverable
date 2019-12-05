@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:SBI_Mgt_System"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="900" ResizeMode="NoResize">
+
+
     <Grid x:Name="Floor" ShowGridLines="True" Margin="294,2,-2,195" Width="500" >
+
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -54,18 +58,18 @@
         <Button x:Name="_6" Content="6" HorizontalAlignment="Left" Grid.Column="5" Grid.Row="1" Click="Button_Click_6" Width="51" Grid.ColumnSpan="2" />
         <Button x:Name="_7" Content="7" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Grid.ColumnSpan="2" Grid.Column="5" Grid.Row="1" Click="Button_Click_7" Margin="48,0,0,0" />
         <Button x:Name="_8" Content="8" HorizontalAlignment="Left" Height="109" VerticalAlignment="Top" Width="51" Margin="49,0,0,0" Grid.Column="6" Grid.Row="1" Click="Button_Click_8" Grid.ColumnSpan="2" />
-        <TextBox x:Name="NameIN" HorizontalAlignment="Left" Height="34" Margin="-209,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
-        <TextBlock HorizontalAlignment="Left" Margin="-288,17,0,0" TextWrapping="Wrap" Text="     Name" VerticalAlignment="Top" Height="17" Width="59"/>
-        <TextBlock HorizontalAlignment="Left" Margin="-278,78,0,0" TextWrapping="Wrap" Text="# of People" VerticalAlignment="Top" RenderTransformOrigin="-0.878,-4" Height="15" Width="67"/>
-        <CheckBox x:Name="PetBox" Content="Yes" HorizontalAlignment="Left" Height="14" Margin="-155,31,0,0" Grid.Row="1" VerticalAlignment="Top" Width="39"/>
-        <TextBlock HorizontalAlignment="Left" Margin="-260,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.306,-0.375" Height="44" Width="22"><Run/><LineBreak/><Run Text="Pets"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="NameIN" HorizontalAlignment="Left" Height="34" Margin="-209,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" BorderBrush="WhiteSmoke"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-288,17,0,0" TextWrapping="Wrap" Text="     Name" VerticalAlignment="Top" Height="17" Width="59" Foreground="WhiteSmoke"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-278,78,0,0" TextWrapping="Wrap" Text="# of People" VerticalAlignment="Top" RenderTransformOrigin="-0.878,-4" Height="15" Width="67" Foreground="WhiteSmoke"/>
+        <CheckBox x:Name="PetBox" Content="Yes" HorizontalAlignment="Left" Height="14" Margin="-155,31,0,0" Grid.Row="1" VerticalAlignment="Top" Width="39" Foreground="WhiteSmoke" BorderBrush="WhiteSmoke"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-260,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.306,-0.375" Height="44" Width="22" Foreground="WhiteSmoke"><Run/><LineBreak/><Run Text="Pets"/><LineBreak/><Run/></TextBlock>
         <Button x:Name="Confirmation" Content="Confirm" HorizontalAlignment="Left" Height="30" Margin="-133,82,0,-1" Grid.Row="1" VerticalAlignment="Top" Width="105" Click="Confirmation_Click"/>
-        <RadioButton x:Name="_1Pep" Content="1" HorizontalAlignment="Left" Height="15" Margin="-197,81,0,0" VerticalAlignment="Top" Width="29" />
-        <RadioButton x:Name="_3Pep" Content="3" HorizontalAlignment="Left" Height="15" Margin="-133,82,0,0" VerticalAlignment="Top" Width="29" />
-        <RadioButton x:Name="_4Pep" Content="4" HorizontalAlignment="Left" Height="15" Margin="-99,81,0,0" VerticalAlignment="Top" Width="31" />
-        <RadioButton x:Name="_5Pep" Content="5" HorizontalAlignment="Left" Height="14" Margin="-63,82,0,0" VerticalAlignment="Top" Width="30" />
-        <RadioButton x:Name="_2Pep" Content="2" HorizontalAlignment="Left" Height="15" Margin="-168,81,0,0" VerticalAlignment="Top" Width="31" />
-        <TextBox x:Name ="Display" HorizontalAlignment="Left" Height="104" Margin="-288,114,0,-106" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="787" Grid.ColumnSpan="10" IsReadOnly="True"/>
+        <RadioButton x:Name="_1Pep" Content="1" HorizontalAlignment="Left" Height="15" Margin="-197,81,0,0" VerticalAlignment="Top" Width="29" Background="White" Foreground="WhiteSmoke" BorderBrush="WhiteSmoke" />
+        <RadioButton x:Name="_3Pep" Content="3" HorizontalAlignment="Left" Height="15" Margin="-133,82,0,0" VerticalAlignment="Top" Width="29" Foreground="WhiteSmoke" BorderBrush="WhiteSmoke" />
+        <RadioButton x:Name="_4Pep" Content="4" HorizontalAlignment="Left" Height="15" Margin="-99,81,0,0" VerticalAlignment="Top" Width="31" Foreground="WhiteSmoke" BorderBrush="WhiteSmoke" />
+        <RadioButton x:Name="_5Pep" Content="5" HorizontalAlignment="Left" Height="14" Margin="-63,82,0,0" VerticalAlignment="Top" Width="30" Foreground="WhiteSmoke" BorderBrush="WhiteSmoke" />
+        <RadioButton x:Name="_2Pep" Content="2" HorizontalAlignment="Left" Height="15" Margin="-168,81,0,0" VerticalAlignment="Top" Width="31" Foreground="WhiteSmoke" BorderBrush="WhiteSmoke" />
+        <TextBox x:Name ="Display" HorizontalAlignment="Left" Height="100" Margin="-288,158,0,-146" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" IsReadOnly="True" BorderBrush="WhiteSmoke"/>
         <Button x:Name="Checkout_Cancel" Content="Checkout" HorizontalAlignment="Left" Height="30" Margin="-260,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" Click="Checkout_Click"/>
 
 

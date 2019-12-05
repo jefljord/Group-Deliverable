@@ -25,10 +25,19 @@ namespace SBI_Mgt_System
         
         room[] rooming = new room[20];
         public Button tempButton = new Button();
+       
 
         public MainWindow()
         {
+
             InitializeComponent();
+            ImageBrush myImage = new ImageBrush();
+            Image BgImage = new Image();
+            BgImage.Source = new BitmapImage(
+                new Uri("pexels-photo-110854.jpeg", UriKind.Relative));
+            myImage.ImageSource = BgImage.Source;
+            Peoples.Background = myImage;
+
             fillArray(rooming);
         }
 
@@ -362,7 +371,7 @@ namespace SBI_Mgt_System
             PrintHelper(currentroom);
             a = currentroom.MakeCopy();
             rooming[currentroom.roomNum] = a;
-            tempButton.Background = new SolidColorBrush(Colors.Red);
+            tempButton.Background = new SolidColorBrush(Colors.IndianRed);
         }
 
         
