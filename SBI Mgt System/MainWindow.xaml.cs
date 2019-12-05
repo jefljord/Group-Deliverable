@@ -23,11 +23,35 @@ namespace SBI_Mgt_System
     public partial class MainWindow : Window
     {
         
+        room[] rooming = new room[20];
+        public Button tempButton = new Button();
+       
+
         public MainWindow()
         {
+
             InitializeComponent();
+            ImageBrush myImage = new ImageBrush();
+            Image BgImage = new Image();
+            BgImage.Source = new BitmapImage(
+                new Uri("pexels-photo-110854.jpeg", UriKind.Relative));
+            myImage.ImageSource = BgImage.Source;
+            Peoples.Background = myImage;
+
+            fillArray(rooming);
         }
 
+        public void fillArray(room[] r) {
+            room x = new room();
+            for (int i = 0; i < 20; i++)
+            {
+                x.empty();
+                r[i] = x;
+            }
+        }
+
+        
+        room currentroom = new room(); 
         public void _1_Click(object sender, RoutedEventArgs e)
         {            
             Room1 openRoom = new Room1();
@@ -43,246 +67,324 @@ namespace SBI_Mgt_System
             rooms x = new rooms();
             x.Show();
         }
+        public void PrintHelper(room current) {
+            Display.Text = "Name: " + current.name + "\n" + "People: " + Convert.ToString(current.people) + "\n" + "Pet: ";
+            if (current.pet)
+            {
+                Display.Text += "Yes";
+            }
+            else
+            {
+                Display.Text += "No";
+            }
+            Display.Text += "\nPrice: " + PriceHelper(currentroom).ToString("0." + new string('0', 2));
 
+        }
+        
+        public double PriceHelper(room current) {
+            double price = 0;
+            if(current.roomNum < 11) {
+                price = 60;
+            }
+            else {
+                price = 50;
+            }
+
+            if (current.people > 2)
+            {
+                price += (10 * (current.people - 2));
+            }
+            if (current.pet)
+            {
+                price += 10;
+            }
+
+            return price + (price*.1475);
+        }
         public void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            string rm = "_1";
-            rooms.findRoom(_1);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _1;
+            currentroom.empty();
 
-            rooms.Reserved(_1);
+            int roomNumber = 0;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(rooming[roomNumber]);
+            
+            
+
+  
         }
 
         public void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            string rm = "_2";
-            rooms.findRoom(_2);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _2;
+            currentroom.empty();
 
-            rooms.Reserved(_2);
+            int roomNumber = 1;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            
+            PrintHelper(rooming[roomNumber]);
+
+
+ 
         }
 
         public void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            string rm = "_3";
-            rooms.findRoom(_3);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_3);
+            tempButton = _3;
+            currentroom.empty();
+            int roomNumber = 2;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+      
         }
 
         public void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            string rm = "_4";
-            rooms.findRoom(_4);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            currentroom.empty();
 
-            rooms.Reserved(_4);
+            tempButton = _4;
+            int roomNumber = 3;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+
+
         }
 
         public void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            string rm = "_5";
-            rooms.findRoom(_5);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_5);
+            tempButton = _5;
+            currentroom.empty();
+            int roomNumber = 4;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+       
 
         }
 
         public void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            string rm = "_6";
-            rooms.findRoom(_6);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _6;
+            currentroom.empty();
+            int roomNumber = 5;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
 
-            rooms.Reserved(_6);
+
         }
 
         public void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            string rm = "_7";
-            rooms.findRoom(_7);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _7;
+            currentroom.empty();
+            int roomNumber = 6;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
 
-            rooms.Reserved(_7);
+         
         }
 
         public void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            string rm = "_8";
-            rooms.findRoom(_8);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _8;
+            currentroom.empty();
+            int roomNumber = 7;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
 
-            rooms.Reserved(_8);
         }
 
         public void Button_Click_9(object sender, RoutedEventArgs e)
         {
-            string rm = "_9";
-            rooms.findRoom(_9);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _9;
+            currentroom.empty();
+            int roomNumber = 8;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
 
-            rooms.Reserved(_9);
+      
         }
 
         public void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            string rm = "_10";
-            rooms.findRoom(_10);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_10);
+            tempButton = _10;
+            currentroom.empty();
+            int roomNumber = 9;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+       
         }
 
         public void Button_Click_11(object sender, RoutedEventArgs e)
         {
-            string rm = "_11";
-            rooms.findRoom(_11);
+            tempButton = _11;
+            currentroom.empty();
+            int roomNumber = 10;
+            currentroom.roomNum = roomNumber;
+            currentroom = rooming[roomNumber];
             
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_11);
+            PrintHelper(currentroom);
+  
         }
 
         public void Button_Click_12(object sender, RoutedEventArgs e)
         {
-            string rm = "_12";
-            rooms.findRoom(_12);
+            tempButton = _12;
+            currentroom.empty();
+            int roomNumber = 11;
+            currentroom.roomNum = roomNumber;
+            currentroom = rooming[roomNumber];
             
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_12);
+            PrintHelper(currentroom);
+        
         }
 
-        public void Button_Click_13(object sender, RoutedEventArgs e)
+        public void Button_Click_20(object sender, RoutedEventArgs e)
         {
-            string rm = "_13";
-            rooms.findRoom(_13);
-           
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_13);
+            tempButton = _20;
+            currentroom.empty();
+            int roomNumber = 18;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+  
         }
 
         public void Button_Click_14(object sender, RoutedEventArgs e)
         {
-            string rm = "_14";
-            rooms.findRoom(_14);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_14);
+            tempButton = _14;
+            currentroom.empty();
+            int roomNumber = 12;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+ 
         }
 
         public void Button_Click_15(object sender, RoutedEventArgs e)
         {
-            string rm = "_15";
-            rooms.findRoom(_15);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _15;
+            currentroom.empty();
+            int roomNumber = 13;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
 
-            rooms.Reserved(_15);
+      
         }
 
         public void Button_Click_16(object sender, RoutedEventArgs e)
         {
-            string rm = "_16";
-            rooms.findRoom(_16);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
+            tempButton = _16;
+            currentroom.empty();
+            int roomNumber = 14;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
 
-            rooms.Reserved(_16);
+        
         }
 
         public void Button_Click_17(object sender, RoutedEventArgs e)
         {
-            string rm = "_17";
-            rooms.findRoom(_17);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_17);
+            tempButton = _17;
+            currentroom.empty();
+            int roomNumber = 15;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+      
         }
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
         {
-            string rm = "_18";
-            rooms.findRoom(_18);
-            
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_18);
+            tempButton = _18;
+            currentroom.empty();
+            int roomNumber = 16;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+         
         }
 
         private void Button_Click_21(object sender, RoutedEventArgs e)
         {
-            string rm = "_21";
-            rooms.findRoom(_21);
-           
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_21);
+            currentroom.empty();
+            tempButton = _21;
+            int roomNumber = 19;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
+            
         }
 
         private void Button_Click_19(object sender, RoutedEventArgs e)
         {
-            string rm = "_19";
-            rooms.findRoom(_19);
+            currentroom.empty();
+            int roomNumber = 17;
+            currentroom = rooming[roomNumber];
+            currentroom.roomNum = roomNumber;
+            PrintHelper(currentroom);
             
-            rooms x = new rooms();
-            x.Owner = this;
-            x.Show();
-
-            rooms.Reserved(_19);
         }
+
+        private void Confirmation_Click(object sender, RoutedEventArgs e)
+        {
+
+            currentroom.name = NameIN.Text;
+            if (_1Pep.IsChecked == true)
+            {
+                currentroom.people = 1;
+            }
+            else if (_2Pep.IsChecked == true)
+            {
+                currentroom.people = 2;
+            }
+            else if (_3Pep.IsChecked == true)
+            {
+                currentroom.people = 3;
+            }
+            else if (_4Pep.IsChecked == true)
+            {
+                currentroom.people = 4;
+            }
+            else if (_5Pep.IsChecked == true)
+            {
+                currentroom.people = 5;
+            }
+
+            if(PetBox.IsChecked == true)
+            {
+                currentroom.pet = true;
+            }
+            room a = new room();
+            PrintHelper(currentroom);
+            a = currentroom.MakeCopy();
+            rooming[currentroom.roomNum] = a;
+            tempButton.Background = new SolidColorBrush(Colors.IndianRed);
+        }
+
+        
+        private void Checkout_Click(object sender, RoutedEventArgs e)
+        {
+            room j = new room();
+            currentroom.empty();
+            rooming[currentroom.roomNum] = j;
+            tempButton.Background = new SolidColorBrush(Color.FromArgb(30, 0, 0, 1));
+
+        }
+
+
+        
     }
 }

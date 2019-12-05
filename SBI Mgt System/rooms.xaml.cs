@@ -23,11 +23,14 @@ namespace SBI_Mgt_System
 
         public static bool res = false;
 
-        public static Button z = new Button();
+        public static Button tempButton = new Button();
+        public string name;
+        public int people;
+        public bool pet;
         public static Button findRoom(Button pp)
         {
-            z = pp;
-            return z;
+            tempButton = pp;
+            return tempButton;
         }
 
         
@@ -46,7 +49,7 @@ namespace SBI_Mgt_System
               
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            z.Background = new SolidColorBrush(Color.FromArgb(30, 0, 0, 1));
+            tempButton.Background = new SolidColorBrush(Color.FromArgb(30, 0, 0, 1));
             this.Close();
         }
 
@@ -57,5 +60,7 @@ namespace SBI_Mgt_System
             
             
         }
+
+       
     }
 }
