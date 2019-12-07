@@ -77,20 +77,20 @@ managerial staff and employees. It is designed around the idea of condensing and
 
 
 \subsection{Background}
-A contributor of the project as plenty of experince working in the Motel business as their family owns and runs one, thus giving the project contributors insight into what it takes to make and effective and helpful tool to expediate the process of checking in and checking out a Customer. 
+A contributor of the project as plenty of experience working in the Motel business as their family owns and runs one, thus giving the project contributors insight into what it takes to make and effective and helpful tool to speed up the process of checking in and checking out a Customer. 
 While the primary purpose of the project is for the Stone Brook Inn, we will be able to design it to be used by any local small hotel or motel with a few small changes. The idea is to keep the functionality universal while making design edits simple and easy to understand. 
 
 \subsection{Challenges}
 
 Ensuring that the program doesn't allow for any booking of unavailable rooms will be a challenge since there will be a lot of test cases that might go unnoticed.
-Incorporating a database presented quite the challenge to do in order to make the program less of a daily handler and more of a full fledged system that held all records past, present and future.
+Incorporating a database proved to be the biggest challenge. Without a database, the project is more of a daily visual of vacancy, as opposed to a complete reservation and management system.
 
 
 \section{Scope}
-The program needs to handle guest checkins and checkouts; will feature an intuitive and powerful interface; be adjustable to any hotel; ensure no overbooking issues arise.
+The program needs to handle guest check-ins and checkouts. It will feature an intuitive and powerful interface, be adjustable to any hotel, and ensure no overbooking issues arise.
 
 \subsection{Requirements}
-The main requirement is a visual of the hotel's rooms and what it available, as well as what's already reserved. Another requirement is the functionality to take in a customer's information and turn a vacant room into a reserved room. The visual of the motel was based on experinece of the contributor that works there, showing two distincit sides housing the two different types of rooms. 
+The main requirement is a visual of the hotel's rooms and what it available, as well as what's already reserved. Another requirement is the functionality to take in a customer's information and turn a vacant room into a reserved room. The visual of the motel was based on the experience of the contributor that works there, showing two distinct sides housing the two different types of rooms. 
 
 \subsubsection{Functional}
 \begin{itemize}
@@ -115,11 +115,15 @@ The main requirement is a visual of the hotel's rooms and what it available, as 
 \hline
 1 & Release occupancy\\
 \hline \hline
-2 & Fill vacancy\\
+2 & Fill vacancy\\ 
+\hline \hline
+3 & Storing customer data\\
 \hline
 
 \end{tabular}
-\caption{Use Cases}
+
+
+\caption{\newline Use Cases}
 \label{tab:useCaseIndex}
 \end{table}
 
@@ -129,9 +133,9 @@ The main requirement is a visual of the hotel's rooms and what it available, as 
 \item[Use Case Name:] Booking and Maintaining Rooms
 \item[Description:] Administrators at motel and hotel businesses will be able to block rooms once they are booked by customers or repairs/cleaning needs to take place.
 
-\item[Use Case Number:] 2
+\item[Use Case Number:] 3
 \item[Use Case Name:] Reservations
-\item[Description:] Interact with a calender in order to properly plan out and schedule rooms to be booked and blocked to prevent overbooking.
+\item[Description:] Interact with a color changing GUI in order to properly plan out and schedule rooms to be booked and blocked to prevent overbooking.
 \end{itemize}
 
 \subsection{Interface Mockups}
@@ -143,11 +147,16 @@ The main requirement is a visual of the hotel's rooms and what it available, as 
 
 
 \section{Project Timeline}
-A large portion of our time spent on this project was on design. To be honest, too much time was spent on the design. It wasn't until, two months in, that we started the actual coding of the project, that the design fell into place all on its own. 
+8/27/2019\\
 
-Within two days, we had moved past the design and delved into the requirements. First came the buttons themselves. Each button needed to act separately from the others, so it took over a month to manage everything that needed to happen upon button clicks. Some of these issues were color changes, form population, and a note system.
+A large portion of our time spent on this project was on design. To be honest, too much time was spent on the design. It wasn't until, two months in, that we started the actual coding of the project, that the design fell into place all on its own. \\
+\newline 11/08/2019 \\
 
-This last month has been committed to polishing and trying to learn a database. We eventually gave up on the database and will store all information as notes.
+Within two days, we had moved past the design and delved into the requirements. First came the buttons themselves. Each button needed to act separately from the others, so it took over a month to manage everything that needed to happen upon button clicks. Some of these issues were color changes, form population, and a note system. \\
+\newline 11/10/2019 \\
+
+This last month has been committed to polishing and trying to learn a database. We eventually gave up on the database and will store all information as notes. \\
+\newline 12/3/2019
 
 \section{Project Structure}
 By the project's culmination, it turned into a day to day system to manage availability of rooms for the hotel. It has a working GUI, and upon filling in the information about reservation, it will mark the room unavailable with a color change. There is another button that will change it back to available. 
@@ -156,7 +165,11 @@ All information is stored in a display box for notes, in lieu of a database. We 
 
 \subsection{UML Outline}
 
-
+\begin{figure}[ht!]
+\includegraphics[height=250px, width=350px]{uml.png}
+\caption{Diagram of the program's programming structure.}
+\label{UML}
+\end{figure}
 
 
 
@@ -166,10 +179,10 @@ The Observer Patter is also being used to constantly be looking at the rooms cur
 
 
 \section{Results}
-By the end of the project, our program currently is able to handle the day-to-day management of rooms at the Stone Brook Inn, where occupied rooms are highlited in red and the unoccupied rooms will remain their beginning grey color, also the price calculation will be handled by the system once all necessary fields are entered. 
+By the end of the project, our program currently is able to handle the day-to-day management of rooms at the Stone Brook Inn, where occupied rooms are highlighted in red and the unoccupied rooms will remain their beginning grey color, also the price calculation will be handled by the system once all necessary fields are entered. 
 
 \subsection{Future Work}
-In the future, implementing a database to hold presistant data as well as and easy way to configure prices and other options within the software are to be added as well as integrating an API to pull reservations from online sites that offer online reservations, or perhaps create a website to handle that for the hotel itself. 
+In the future, implementing a database to hold persistent data as well as and easy way to configure prices and other options within the software are to be added as well as integrating an API to pull reservations from online sites that offer online reservations, or perhaps create a website to handle that for the hotel itself. 
 
 
 
